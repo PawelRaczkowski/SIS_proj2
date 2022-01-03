@@ -1,0 +1,16 @@
+C:\Users\pudzian997\Desktop\Studia\SIS_proj2\Project_2\Project_2\obj\Debug\netcoreapp3.1\Project_2.csproj.AssemblyReference.cache
+C:\Users\pudzian997\Desktop\Studia\SIS_proj2\Project_2\Project_2\obj\Debug\netcoreapp3.1\Project_2.Form1.resources
+C:\Users\pudzian997\Desktop\Studia\SIS_proj2\Project_2\Project_2\obj\Debug\netcoreapp3.1\Project_2.csproj.GenerateResource.cache
+C:\Users\pudzian997\Desktop\Studia\SIS_proj2\Project_2\Project_2\obj\Debug\netcoreapp3.1\Project_2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pudzian997\Desktop\Studia\SIS_proj2\Project_2\Project_2\obj\Debug\netcoreapp3.1\Project_2.AssemblyInfoInputs.cache
+C:\Users\pudzian997\Desktop\Studia\SIS_proj2\Project_2\Project_2\obj\Debug\netcoreapp3.1\Project_2.AssemblyInfo.cs
+C:\Users\pudzian997\Desktop\Studia\SIS_proj2\Project_2\Project_2\obj\Debug\netcoreapp3.1\Project_2.csproj.CoreCompileInputs.cache
+C:\Users\pudzian997\Desktop\Studia\SIS_proj2\Project_2\Project_2\bin\Debug\netcoreapp3.1\Project_2.exe
+C:\Users\pudzian997\Desktop\Studia\SIS_proj2\Project_2\Project_2\bin\Debug\netcoreapp3.1\Project_2.deps.json
+C:\Users\pudzian997\Desktop\Studia\SIS_proj2\Project_2\Project_2\bin\Debug\netcoreapp3.1\Project_2.runtimeconfig.json
+C:\Users\pudzian997\Desktop\Studia\SIS_proj2\Project_2\Project_2\bin\Debug\netcoreapp3.1\Project_2.runtimeconfig.dev.json
+C:\Users\pudzian997\Desktop\Studia\SIS_proj2\Project_2\Project_2\bin\Debug\netcoreapp3.1\Project_2.dll
+C:\Users\pudzian997\Desktop\Studia\SIS_proj2\Project_2\Project_2\bin\Debug\netcoreapp3.1\Project_2.pdb
+C:\Users\pudzian997\Desktop\Studia\SIS_proj2\Project_2\Project_2\obj\Debug\netcoreapp3.1\Project_2.dll
+C:\Users\pudzian997\Desktop\Studia\SIS_proj2\Project_2\Project_2\obj\Debug\netcoreapp3.1\Project_2.pdb
+C:\Users\pudzian997\Desktop\Studia\SIS_proj2\Project_2\Project_2\obj\Debug\netcoreapp3.1\Project_2.genruntimeconfig.cache

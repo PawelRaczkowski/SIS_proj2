@@ -21,7 +21,7 @@ namespace Project_2
         {
 
         }
-        private double Calculate_CSO(int i, double m, double a, List<double> channels, List<double> all_dso_products)
+        private double Calculate_CSO(int i, double m, double a, List<double> channels, List<double> all_dso_products, double delta_f)
         {
             double CSO = 0.0;
             // Wzór na CSO ~= 10*log10 z floor[(Ncso * (am)^2)] gdzie Ncso to liczba produktów mieszania w danym kanale (dla danej częstotliwości) 2 rzędu
@@ -31,7 +31,8 @@ namespace Project_2
             int Ncso = 0;
             for (int j=0; j<all_dso_products.Count; j++)
             {
-                if (Math.Abs(channels[i]-all_dso_products[j])<0.0001) 
+
+                if (all_dso_products[j]<=channels[i]+delta_f/2 && all_dso_products[j]>= channels[i]-delta_f/2) 
                 {
                     Ncso = Ncso + 1;
                 }
@@ -42,7 +43,7 @@ namespace Project_2
 
             return CSO;
         }
-        private double Calculate_CTB(int i, double m, double b, List<double> channels, List<double> all_dto_products)
+        private double Calculate_CTB(int i, double m, double b, List<double> channels, List<double> all_dto_products, double delta_f)
         {
             double CTB = 0.0;
             // Wzór na CTB ~=10*log10 z floor[(Nctb * (1.5*b*m^2)^2)] gdzie Nctb to liczba produktów w danym kanale (dla danej częstotliwości) 3 rzędu
@@ -52,7 +53,7 @@ namespace Project_2
             int Nctb = 0;
             for (int j = 0; j < all_dto_products.Count; j++)
             {
-                if (Math.Abs(channels[i] - all_dto_products[j]) < 0.0001)
+                if (all_dto_products[j] <= channels[i] + delta_f / 2 && all_dto_products[j] >= channels[i] - delta_f / 2)
                 {
                     Nctb = Nctb + 1;
                 }
@@ -89,6 +90,8 @@ namespace Project_2
             {
                 channels.Add(f0+i*delta_f);
             }
+            //PrintChannels(channels);
+            //debugginglist.Items.Add("Printing DSO products...\n\n\n");
 
             //Wyznaczenie produktów 2-rzedu DSO
             List<double> all_dso_products = new List<double>();
@@ -96,32 +99,39 @@ namespace Project_2
             {
                 for (int j = 0; j < channels.Count; j++)
                 {
-                    all_dso_products.Add(channels[k] + channels[j]);
-                    all_dso_products.Add(channels[k] - channels[j]);
+                    all_dso_products.Add(Math.Abs(channels[k] + channels[j]));
+                    all_dso_products.Add(Math.Abs(channels[k] - channels[j]));
                 }
             }
-
+            //PrintChannels(all_dso_products);
             //Wyznaczenie produktów 3-rzedu DTO
             List<double> all_dto_products = new List<double>();
             for (int k = 0; k < channels.Count; k++)
             {
                 for (int j = 0; j < channels.Count; j++)
                 {
-                    for (int m = 0; m < channels.Count; m++)
+                    for (int x = 0; x < channels.Count; x++)
                     {
-                        all_dto_products.Add(channels[k] + channels[j] + channels[m]);
-                        all_dto_products.Add(channels[k] + channels[j] - channels[m]);
+                        all_dto_products.Add(Math.Abs(channels[k] + channels[j] + channels[x]));
+                        all_dto_products.Add(Math.Abs(channels[k] + channels[j] - channels[x]));
                     }
                 }
             }
 
             for (int i=0; i<channels.Count; i++)
             {
-                double CSO = Calculate_CSO(i, m, a, channels, all_dso_products);
-                double CTB = Calculate_CTB(i, m, b, channels, all_dto_products);
+                double CSO = Calculate_CSO(i, m, a, channels, all_dso_products,delta_f);
+                double CTB = Calculate_CTB(i, m, b, channels, all_dto_products,delta_f);
                 string result = $"For channel {i+1}: CSO= {CSO} [dB], CTB={CTB} [dB]";
                 results.Items.Add(result);
             }
+        }
+
+       
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

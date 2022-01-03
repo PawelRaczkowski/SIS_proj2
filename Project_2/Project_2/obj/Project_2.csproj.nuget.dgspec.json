@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Pawel\\Desktop\\Magisterka\\Semestr III\\SIS\\Project_2\\Project_2\\Project_2.csproj": {}
+    "C:\\Users\\pudzian997\\Desktop\\Studia\\SIS_proj2\\Project_2\\Project_2\\Project_2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Pawel\\Desktop\\Magisterka\\Semestr III\\SIS\\Project_2\\Project_2\\Project_2.csproj": {
+    "C:\\Users\\pudzian997\\Desktop\\Studia\\SIS_proj2\\Project_2\\Project_2\\Project_2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pawel\\Desktop\\Magisterka\\Semestr III\\SIS\\Project_2\\Project_2\\Project_2.csproj",
+        "projectUniqueName": "C:\\Users\\pudzian997\\Desktop\\Studia\\SIS_proj2\\Project_2\\Project_2\\Project_2.csproj",
         "projectName": "Project_2",
-        "projectPath": "C:\\Users\\Pawel\\Desktop\\Magisterka\\Semestr III\\SIS\\Project_2\\Project_2\\Project_2.csproj",
-        "packagesPath": "C:\\Users\\Pawel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pawel\\Desktop\\Magisterka\\Semestr III\\SIS\\Project_2\\Project_2\\obj\\",
+        "projectPath": "C:\\Users\\pudzian997\\Desktop\\Studia\\SIS_proj2\\Project_2\\Project_2\\Project_2.csproj",
+        "packagesPath": "C:\\Users\\pudzian997\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pudzian997\\Desktop\\Studia\\SIS_proj2\\Project_2\\Project_2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Pawel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pudzian997\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,6 +26,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -37,6 +38,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -47,6 +49,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.1.22, 3.1.22]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -55,7 +75,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
